@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>warriors professions - Warriors</title>
+        <title>halls create - Library</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -20,7 +20,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../..">Warriors</a>
+                <a class="navbar-brand" href="../..">Library</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -36,12 +36,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../update/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../skills/" class="nav-link">
+                                <a rel="next" href="../../copys/list/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -63,7 +63,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">Показать профессию всех войнов</a>
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">Добавление нового зала</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#success-responses" class="nav-link">Success Responses</a>
               <ul class="nav flex-column">
@@ -76,23 +76,21 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">Показать профессию всех войнов</h1>
-<p>Выводит информацию о профессии всех войнов</p>
-<p><strong><em>URL</em></strong> : <code>/warriors/skills</code></p>
-<p><strong><em>Method</em></strong> : <code>GET</code></p>
+<h1 id="_1">Добавление нового зала</h1>
+<p>Позволяет добавить новый читальный зал</p>
+<p><strong><em>URL</em></strong> : <code>/halls/new</code></p>
+<p><strong><em>Method</em></strong> : <code>POST</code></p>
 <p><strong><em>Auth required</em></strong> : YES</p>
 <p><strong><em>Permission required</em></strong> : None</p>
 <h2 id="success-responses">Success Responses</h2>
-<p><strong>Code</strong> : <code>200 OK</code></p>
-<p><strong>Content</strong>:</p>
+<p><strong>Code</strong> : <code>201 Created</code></p>
+<p><strong>Content</strong> :</p>
 <pre><code class="language-json">{
-        &quot;name&quot;: &quot;Олег&quot;,
-        &quot;profession&quot;: {
-            &quot;id&quot;: 1,
-            &quot;title&quot;: &quot;Дворник&quot;,
-            &quot;description&quot;: &quot;Дворнит&quot;
-        }
-    }
+    &quot;id&quot;: 2,
+    &quot;sequence_number&quot;: 2,
+    &quot;name&quot;: &quot;German Authors&quot;,
+    &quot;capacity&quot;: 30
+}
 </code></pre></div>
             </div>
         </div>
