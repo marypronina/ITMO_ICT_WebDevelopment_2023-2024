@@ -15,6 +15,12 @@ class BookSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class BookShortSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Book
+        fields = ['name', 'author']
+
+
 class HallSerializer(serializers.ModelSerializer):
     class Meta:
         model = Hall
@@ -28,6 +34,14 @@ class CopySerializer(serializers.ModelSerializer):
     class Meta:
         model = Copy
         fields = '__all__'
+
+
+class CopyShortSerializer(serializers.ModelSerializer):
+    book = BookShortSerializer()
+
+    class Meta:
+        model = Copy
+        fields = ['book']
 
 
 class CreateCopySerializer(serializers.ModelSerializer):
@@ -45,6 +59,29 @@ class ReaderSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class EducationSerializer(serializers.Serializer):
+    education = serializers.CharField()
+    education_name = serializers.SerializerMethodField()
+    percentage = serializers.SerializerMethodField()
+
+    def get_education_name(self, object):
+        return dict(Reader.EDUCATIONS).get(object['education'], object['education'])
+
+    def get_percentage(self, object):
+        readers_cnt = Reader.objects.count()
+        education_cnt = Reader.objects.filter(education=object['education']).count()
+        return (education_cnt / readers_cnt) * 100
+
+    def create(self, validated_data):
+        pass
+
+
+class ReaderShortSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Reader
+        fields = ['name', 'second_name', 'surname']
+
+
 class CreateReaderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reader
@@ -58,6 +95,22 @@ class AssignmentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Assignment
         fields = '__all__'
+
+
+class AssignmentShortSerializer(serializers.ModelSerializer):
+    copy = CopyShortSerializer()
+
+    class Meta:
+        model = Assignment
+        fields = ['copy']
+
+
+class AssignmentDebtorSerializer(serializers.ModelSerializer):
+    reader = ReaderShortSerializer()
+
+    class Meta:
+        model = Assignment
+        fields = ['reader']
 
 
 class CreateAssignmentSerializer(serializers.ModelSerializer):
