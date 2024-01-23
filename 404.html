@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>Library</title>
+        <title>My Docs</title>
         <link href="/css/bootstrap.min.css" rel="stylesheet">
         <link href="/css/font-awesome.min.css" rel="stylesheet">
         <link href="/css/base.css" rel="stylesheet">
@@ -20,10 +20,205 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="/.">Library</a>
+                <a class="navbar-brand" href="/.">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="/." class="nav-link">Отчеты к лабораторным работам</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab1 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="/lab1/task1/" class="dropdown-item">Задание 1</a>
+</li>
+                                    
+<li>
+    <a href="/lab1/task2/" class="dropdown-item">Задание 2</a>
+</li>
+                                    
+<li>
+    <a href="/lab1/task3/" class="dropdown-item">Задание 3</a>
+</li>
+                                    
+<li>
+    <a href="/lab1/task4/" class="dropdown-item">Задание 4</a>
+</li>
+                                    
+<li>
+    <a href="/lab1/task5/" class="dropdown-item">Задание 5</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab2 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="/lab2/task/" class="dropdown-item">Задание</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab3 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="/lab3/main/" class="dropdown-item">Задание</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Assignments</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/lab3/assignments/create/" class="dropdown-item">Добавление нового закрепления книги</a>
+</li>
+            
+<li>
+    <a href="/lab3/assignments/info/" class="dropdown-item">Показать информацию о закреплении книгах</a>
+</li>
+            
+<li>
+    <a href="/lab3/assignments/list/" class="dropdown-item">Показать информацию обо всех закреплениях книг</a>
+</li>
+            
+<li>
+    <a href="/lab3/assignments/update/" class="dropdown-item">Изменение информации о закреплении книги</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Auth</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/lab3/auth/token/" class="dropdown-item">Создание токена для пользователя</a>
+</li>
+            
+<li>
+    <a href="/lab3/auth/users/" class="dropdown-item">Регистрация нового пользователя</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Books</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/lab3/books/create/" class="dropdown-item">Добавление новой книги</a>
+</li>
+            
+<li>
+    <a href="/lab3/books/info/" class="dropdown-item">Показать информацию о книге</a>
+</li>
+            
+<li>
+    <a href="/lab3/books/list/" class="dropdown-item">Показать информацию обо всех книгах</a>
+</li>
+            
+<li>
+    <a href="/lab3/books/update/" class="dropdown-item">Изменение информации о книге</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Copys</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/lab3/copys/create/" class="dropdown-item">Добавление новой копии</a>
+</li>
+            
+<li>
+    <a href="/lab3/copys/info/" class="dropdown-item">Показать информацию о копии книги</a>
+</li>
+            
+<li>
+    <a href="/lab3/copys/list/" class="dropdown-item">Показать информацию обо всех копиях</a>
+</li>
+            
+<li>
+    <a href="/lab3/copys/update/" class="dropdown-item">Изменение информации о копии</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Halls</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/lab3/halls/create/" class="dropdown-item">Добавление нового зала</a>
+</li>
+            
+<li>
+    <a href="/lab3/halls/info/" class="dropdown-item">Показать информацию о зале</a>
+</li>
+            
+<li>
+    <a href="/lab3/halls/list/" class="dropdown-item">Показать информацию обо всех залах</a>
+</li>
+            
+<li>
+    <a href="/lab3/halls/update/" class="dropdown-item">Изменение информации о зале</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Readers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="/lab3/readers/create/" class="dropdown-item">Добавление новом читателе</a>
+</li>
+            
+<li>
+    <a href="/lab3/readers/info/" class="dropdown-item">Показать информацию о читателе</a>
+</li>
+            
+<li>
+    <a href="/lab3/readers/list/" class="dropdown-item">Показать информацию обо всех читателях</a>
+</li>
+            
+<li>
+    <a href="/lab3/readers/update/" class="dropdown-item">Изменение информации о читателе</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab4 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="/lab4/main/" class="dropdown-item">Задание</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pw3.1 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="/pw3.1/tasks/" class="dropdown-item">Практическая 3.1</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
 
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item">

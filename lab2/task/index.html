@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Задание - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Отчеты к лабораторным работам</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab1 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../lab1/task1/" class="dropdown-item">Задание 1</a>
+</li>
+                                    
+<li>
+    <a href="../../lab1/task2/" class="dropdown-item">Задание 2</a>
+</li>
+                                    
+<li>
+    <a href="../../lab1/task3/" class="dropdown-item">Задание 3</a>
+</li>
+                                    
+<li>
+    <a href="../../lab1/task4/" class="dropdown-item">Задание 4</a>
+</li>
+                                    
+<li>
+    <a href="../../lab1/task5/" class="dropdown-item">Задание 5</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab2 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Задание</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab3 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../lab3/main/" class="dropdown-item">Задание</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Assignments</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/assignments/create/" class="dropdown-item">Добавление нового закрепления книги</a>
+</li>
+            
+<li>
+    <a href="../../lab3/assignments/info/" class="dropdown-item">Показать информацию о закреплении книгах</a>
+</li>
+            
+<li>
+    <a href="../../lab3/assignments/list/" class="dropdown-item">Показать информацию обо всех закреплениях книг</a>
+</li>
+            
+<li>
+    <a href="../../lab3/assignments/update/" class="dropdown-item">Изменение информации о закреплении книги</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Auth</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/auth/token/" class="dropdown-item">Создание токена для пользователя</a>
+</li>
+            
+<li>
+    <a href="../../lab3/auth/users/" class="dropdown-item">Регистрация нового пользователя</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Books</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/books/create/" class="dropdown-item">Добавление новой книги</a>
+</li>
+            
+<li>
+    <a href="../../lab3/books/info/" class="dropdown-item">Показать информацию о книге</a>
+</li>
+            
+<li>
+    <a href="../../lab3/books/list/" class="dropdown-item">Показать информацию обо всех книгах</a>
+</li>
+            
+<li>
+    <a href="../../lab3/books/update/" class="dropdown-item">Изменение информации о книге</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Copys</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/copys/create/" class="dropdown-item">Добавление новой копии</a>
+</li>
+            
+<li>
+    <a href="../../lab3/copys/info/" class="dropdown-item">Показать информацию о копии книги</a>
+</li>
+            
+<li>
+    <a href="../../lab3/copys/list/" class="dropdown-item">Показать информацию обо всех копиях</a>
+</li>
+            
+<li>
+    <a href="../../lab3/copys/update/" class="dropdown-item">Изменение информации о копии</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Halls</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/halls/create/" class="dropdown-item">Добавление нового зала</a>
+</li>
+            
+<li>
+    <a href="../../lab3/halls/info/" class="dropdown-item">Показать информацию о зале</a>
+</li>
+            
+<li>
+    <a href="../../lab3/halls/list/" class="dropdown-item">Показать информацию обо всех залах</a>
+</li>
+            
+<li>
+    <a href="../../lab3/halls/update/" class="dropdown-item">Изменение информации о зале</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Readers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../lab3/readers/create/" class="dropdown-item">Добавление новом читателе</a>
+</li>
+            
+<li>
+    <a href="../../lab3/readers/info/" class="dropdown-item">Показать информацию о читателе</a>
+</li>
+            
+<li>
+    <a href="../../lab3/readers/list/" class="dropdown-item">Показать информацию обо всех читателях</a>
+</li>
+            
+<li>
+    <a href="../../lab3/readers/update/" class="dropdown-item">Изменение информации о читателе</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab4 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../lab4/main/" class="dropdown-item">Задание</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pw3.1 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../pw3.1/tasks/" class="dropdown-item">Практическая 3.1</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../lab1/task5/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../lab3/main/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">Задание</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_3" class="nav-link">Регистрация</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_12" class="nav-link">Просмотр домашних заданий</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_16" class="nav-link">Сдача домашних заданий</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_21" class="nav-link">Выставление оценки</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_22" class="nav-link">Вывод оценок</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">Задание</h1>
+<h3 id="2">Вариант 2:</h3>
+<h3 id="_2">Доска домашних заданий.<br></h3>
+<p>О домашнем задании должна храниться следующая информация: предмет,
+преподаватель, дата выдачи, период выполнения, текст задания, информация о штрафах.<br>
+Необходимо реализовать следующий функционал:<br>
+Регистрация новых пользователей.<br>
+Просмотр домашних заданий по всем дисциплинам (сроки выполнения,
+описание задания).<br>
+Сдача домашних заданий в текстовом виде.<br>
+Администратор (учитель) должен иметь возможность поставить оценку за
+задание средствами Django-admin.<br>
+В клиентской части должна формироваться таблица, отображающая оценки
+всех учеников класса.<br></p>
+<p>Были написаны следующие модели:</p>
+<pre><code class="language-python"># хранит и учителей и учеников, которые разделены по группам, у учителей есть уникальные права
+class Teacher(AbstractUser):
+    first_name = models.CharField(max_length=30)
+    second_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+
+
+class Subject(models.Model): #предметы
+    name = models.CharField(max_length=100)
+
+
+class Homework(models.Model):
+    teacher = models.ForeignKey(User, limit_choices_to={'groups__name': &quot;Teachers&quot;}, on_delete=models.CASCADE)
+    subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
+    release_date = models.DateTimeField(default=datetime.datetime.now())
+    deadline = models.DateTimeField()
+    description = models.CharField(max_length=1000)
+    penalty = models.CharField(max_length=1000, default=None, blank=True, null=True)
+
+
+class Solution(models.Model):
+    student = models.ForeignKey(User, limit_choices_to={'groups__name': &quot;Students&quot;}, on_delete=models.CASCADE)
+    homework = models.ForeignKey(Homework, on_delete=models.CASCADE)
+    solution_text = models.CharField(max_length=1000)
+    status = [
+        ('CHECK', 'Checked'),
+        ('WAIT', 'Waiting to be checked')
+    ]
+    mark = models.IntegerField(default=None, blank=True, null=True)
+
+</code></pre>
+<p>Адресация:</p>
+<pre><code class="language-python">from django.urls import path
+from . import views
+
+
+urlpatterns = [
+    path('teacher/new', views.teacher_form_view),
+    path('teacher/success', views.teacher_add_success_view),
+    path('student/new', views.student_form_view),
+    path('student/success', views.student_add_success_view),
+    path('homeworks', views.homeworks_view),
+    path('homeworks/new/&lt;hw_id&gt;', views.solution_form_view),
+    path('solution/success', views.solution_add_success_view),
+    path('register', views.register_view),
+]
+</code></pre>
+<h1 id="_3">Регистрация</h1>
+<h3 id="_4">Форма для регистрации учителей:</h3>
+<pre><code class="language-python">class TeacherForm(forms.ModelForm):
+    class Meta:
+        model = Teacher
+        fields = [
+            &quot;username&quot;,
+            &quot;password&quot;,
+            &quot;last_name&quot;,
+            &quot;first_name&quot;,
+            &quot;second_name&quot;,
+        ]
+</code></pre>
+<h3 id="_5">Представления для регистрации учителей:</h3>
+<pre><code class="language-python">def teacher_form_view(request):
+    context = {}
+    form = TeacherForm(request.POST or None)
+    if form.is_valid():
+        user = form.save()
+        group = Group.objects.get(name='Teachers')
+        user.groups.add(group) #добавление новому пользователю группы
+        user.is_staff = True #возможность пользоваться админ панелью
+        user.set_password(form.cleaned_data[&quot;password&quot;]) #хэширование пароля
+        user.save()
+        return HttpResponseRedirect('../teacher/success')
+    context['form'] = form
+    return render(request, &quot;new_user.html&quot;, context)
+
+
+def teacher_add_success_view(request):
+    return render(request, &quot;success_page.html&quot;)
+</code></pre>
+<h3 id="_6">Шаблоны для регистрации учителей:</h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;New Teacher&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;form method=&quot;POST&quot; enctype=&quot;multipart/form-data&quot;&gt;
+      {% csrf_token %}
+        {{ form.as_p }}
+      &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Success&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h3&gt;New teacher has been added successfully&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="_7">Результат:</h3>
+<p><img alt="img.png" src="../images/img.png" />
+<img alt="img_1.png" src="../images/img_1.png" /></p>
+<h3 id="_8">Форма для регистрации учеников:</h3>
+<pre><code class="language-python">class StudentForm(forms.ModelForm):
+    class Meta:
+        model = Teacher
+        fields = [
+            &quot;username&quot;,
+            &quot;password&quot;,
+            &quot;last_name&quot;,
+            &quot;first_name&quot;,
+            &quot;second_name&quot;,
+        ]
+</code></pre>
+<h3 id="_9">Представления для регистрации учеников:</h3>
+<pre><code class="language-python">def student_form_view(request):
+    context = {}
+    form = StudentForm(request.POST or None)
+    if form.is_valid():
+        user = form.save()
+        group = Group.objects.get(name='Students')
+        user.groups.add(group) #добавление новому пользователю группы
+        user.set_password(form.cleaned_data[&quot;password&quot;]) #хэширование пароля
+        user.save()
+        return HttpResponseRedirect('../student/success')
+    context['form'] = form
+    return render(request, &quot;new_student.html&quot;, context)
+
+
+def student_add_success_view(request):
+    return render(request, &quot;student_success_page.html&quot;)
+</code></pre>
+<h3 id="_10">Шаблоны для регистрации учеников:</h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;New Student&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;form method=&quot;POST&quot; enctype=&quot;multipart/form-data&quot;&gt;
+      {% csrf_token %}
+        {{ form.as_p }}
+      &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Success&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h3&gt;New student has been added successfully&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="_11">Результат:</h3>
+<p><img alt="img_2.png" src="../images/img_2.png" />
+<img alt="img_3.png" src="../images/img_3.png" /></p>
+<h1 id="_12">Просмотр домашних заданий</h1>
+<h3 id="_13">Представление для вывода домашних заданий:</h3>
+<pre><code class="language-python">def homeworks_view(request):
+    hws = dict()
+    hws[&quot;dataset&quot;] = Homework.objects.all()
+    return render(request, &quot;show_all_hws.html&quot;, hws)
+</code></pre>
+<h3 id="_14">Шаблон для вывода домашних заданий:</h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Homeworks&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul&gt;
+        {% for object in dataset %}
+            &lt;h3&gt;{{object.subject.name}}&lt;/h3&gt;
+            Дата выдачи: {{object.release_date|date:'d M Y'}}
+            &lt;br&gt;&lt;br&gt;
+            Дедлайн: {{object.deadline|date:'d M Y'}}
+            &lt;br&gt;&lt;br&gt;
+            &lt;strong&gt;Задание:&lt;/strong&gt; &lt;br&gt;
+            {{object.description}}
+            &lt;br&gt;&lt;br&gt;
+            &lt;strong&gt;Штраф:&lt;/strong&gt; {{object.penalty}}
+            &lt;br&gt;&lt;br&gt;
+            &lt;a href=&quot;homeworks/new/{{object.id}}&quot;&gt;&lt;button&gt;Перейти к сдаче&lt;/button&gt;&lt;/a&gt;
+            &lt;hr/&gt;
+
+        {% endfor %}
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="_15">Результат:</h3>
+<p><img alt="img_4.png" src="../images/img_4.png" /></p>
+<h1 id="_16">Сдача домашних заданий</h1>
+<h3 id="_17">Форма для сдачи домашних заданий:</h3>
+<pre><code class="language-python">class SolutionForm(forms.ModelForm):
+    class Meta:
+        model = Solution
+        fields = [
+            &quot;student&quot;,
+            &quot;solution_text&quot;,
+        ]
+</code></pre>
+<h3 id="_18">Представления для сдачи домашних заданий:</h3>
+<pre><code class="language-python">def solution_form_view(request, hw_id):
+    context = {}
+    form = SolutionForm(request.POST or None)
+    homework = Homework.objects.get(pk=hw_id)
+
+    if form.is_valid():
+        solution = form.save(commit=False) #не коммит, потому что fk homework еще не прописан
+        solution.homework = homework
+        solution.save()
+        return HttpResponseRedirect('../../solution/success')
+
+    context['form'] = form
+    context['homework'] = homework
+    return render(request, &quot;new_solution.html&quot;, context)
+
+
+def solution_add_success_view(request):
+    return render(request, &quot;solution_success_page.html&quot;)
+</code></pre>
+<h3 id="_19">Шаблоны для сдачи домашних заданий:</h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;New Solution&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h3&gt;{{ homework.subject.name }}&lt;/h3&gt;
+    &lt;p&gt;&lt;strong&gt;Задание:&lt;/strong&gt; {{homework.description}}&lt;/p&gt;
+    &lt;form method=&quot;POST&quot; enctype=&quot;multipart/form-data&quot;&gt;
+        {% csrf_token %}
+        {{ form.as_p }}
+        &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Success&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h3&gt;Your solution has been added successfully&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="_20">Результат:</h3>
+<p><img alt="img_5.png" src="../images/img_5.png" />
+<img alt="img_6.png" src="../images/img_6.png" /></p>
+<h1 id="_21">Выставление оценки</h1>
+<p>Учителя могут пользоваться админ панелью Django и имеют там уникальные права.
+Они могут добавлять, менять, удалять и просматривать домашние задания,
+а также просматривать и менять решения (выставление оценки).</p>
+<p><img alt="img_7.png" src="../images/img_7.png" /></p>
+<p><img alt="img_8.png" src="../images/img_8.png" /></p>
+<p><img alt="img_10.png" src="../images/img_10.png" /></p>
+<h1 id="_22">Вывод оценок</h1>
+<h3 id="_23">Представление для вывода оценок:</h3>
+<pre><code class="language-python">def register_view(request):
+    subjects = Subject.objects.all()
+    register = []
+    students = User.objects.filter(groups__name='Students')
+    for student in students:
+        student_marks = []
+        for subject in subjects:
+            solutions = Solution.objects.filter(student=student, homework__subject=subject)
+            subj_marks = []
+            for solution in solutions:
+                if solution.mark is not None:
+                    subj_marks.append(solution.mark)
+            student_marks.append((subject, subj_marks))
+        register.append((student, student_marks))
+
+    context = {
+        'student_data': register,
+    }
+
+    return render(request, 'show_marks.html', context)
+</code></pre>
+<h3 id="_24">Шаблон для вывода всех оценок:</h3>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Student&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Register&lt;/h1&gt;
+    {% for student, student_marks in student_data %}
+        &lt;h2&gt;{{ student.first_name }}&lt;/h2&gt;
+        &lt;ul&gt;
+            {% for subject, marks in student_marks %}
+                &lt;li&gt;
+                    {{ subject.name }}:
+                    {% if marks %}
+                        {% for mark in marks %}
+                            {{ mark }}
+                        {% endfor %}
+                    {% else %}
+                        No marks available
+                    {% endif %}
+                &lt;/li&gt;
+            {% endfor %}
+        &lt;/ul&gt;
+    {% endfor %}
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
